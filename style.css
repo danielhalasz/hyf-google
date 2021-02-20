@@ -1,0 +1,153 @@
+/* CSS files add styling rules to your content */
+
+main {
+  font-family: Google Sans,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .25px;
+  margin-left: 10px;
+  margin-right: 8px;
+  min-width: 96px;
+  padding: 9px 23px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 10px 10px;  
+}
+
+.header {
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+.header a, .button {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.header a:hover{
+  text-decoration: underline;
+}
+
+.header .button {
+  cursor: pointer;
+  background-color: #1a73e8;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8%;
+}
+
+.header .button:hover {
+   box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+   background: #2b7de9;
+   text-decoration: none;
+}
+
+.center-area {
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+}
+
+input {
+  width: 270px;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 44px;
+  margin: 10px auto;
+  outline: none;
+  padding: 0px 10px;
+}
+
+.buttons button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttons button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.languages {
+    font-size: small;
+}
+
+.languages a {
+  text-decoration: none;
+}
+
+.languages a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: inline-block;
+  self-align: bottom;
+  margin: 10px;
+  padding: 0px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 100px;
+}
+
+footer a {
+  grid-row: 3;
+  color: #70757a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+ul li {
+display: inline-block;
+  list-style-type: none;
+  margin: 6px;
+  padding: 6px;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+@media (max-width: 750px) { 
+  .footer-right {
+  float: left;
+}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
